@@ -7,11 +7,11 @@ struct Ship{
     Rect p;
     string id;
     int dx,dy;
-};
-void move(Ship &thuyen){
-    thuyen.p.x+=thuyen.dx;
-    thuyen.p.y+=thuyen.dy;
+void move(){
+    p.x+=dx;
+    p.y+=dy;
 }
+};
 void display(const Ship&ship){
     cout<<ship.id<<endl<<ship.p.x<<" "<<ship.p.y<<" ";
 }
@@ -21,6 +21,6 @@ void nhap(Ship&thuyen){
 int main(){
     Ship p;
     nhap(p);
-    move(p);
+   p.move();
     display(p);
 }
