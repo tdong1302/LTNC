@@ -12,9 +12,18 @@ bool songuyento(int n){
     }
     return true;
 }
+void cacsonguyentonhohon(int n){
+    for(int i=2;i<n;i++){
+        if(songuyento(i)){
+            cout<<i<<" ";
+        }
+    }
+}
 int main(){
    int n; cin>>n;
    if(songuyento(n)){
     cout<<"1";
    } else cout<<"0";
+   cout<< endl;
+   cacsonguyentonhohon(n);
 }
