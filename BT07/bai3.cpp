@@ -10,5 +10,6 @@ int count_even(int* arr, int size) {
     return count;
 }
 int main(){
-
+ int a[]={1,2,3,4,5,6,7};
+ cout<<count_even(a,7);
 }
